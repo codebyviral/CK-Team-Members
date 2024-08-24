@@ -10,12 +10,12 @@ const Team = () => {
     axios.get("https://ck-team-members.onrender.com/api/team/members")
       .then((response) => {
         setMembers(response.data);
-        setLoading(false); // Data fetched successfully
+        setLoading(false); 
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-        setError("Failed to load data."); // Set error state
-        setLoading(false); // Stop loading
+        setError("Failed to load data."); 
+        setLoading(false); 
       });
   }, []);
 
