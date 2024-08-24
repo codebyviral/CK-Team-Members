@@ -4,7 +4,7 @@ import { memberRouter } from "./router/member-router.js"
 const app = express();
 
 const corsOptions = {
-    origin: 'https://ck-team-members.vercel.app/',
+    origin: 'https://ck-team-members.vercel.app',
     method: "GET,POST,DELETE,PATCH,HEAD",
     Credentials: true,
     allowedHeaders: 'Content-Type, Authorization',
