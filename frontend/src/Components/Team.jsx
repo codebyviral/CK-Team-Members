@@ -5,7 +5,7 @@ const Team = () => {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/team/members").then((response) => {
+    axios.get("https://ck-team-members.onrender.com/api/team/members").then((response) => {
       setMembers(response.data);
     });
   }, []);
