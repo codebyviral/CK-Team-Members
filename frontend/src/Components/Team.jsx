@@ -9,7 +9,7 @@ const Team = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/team/members")
+      .get("https://ck-team-members.onrender.com/api/team/members")
       .then((response) => {
         setMembers(response.data);
         setLoading(false);
