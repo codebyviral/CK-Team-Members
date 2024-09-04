@@ -10,6 +10,7 @@ const Team = () => {
   useEffect(() => {
     axios
       .get("https://ck-team-members.onrender.com/api/team/members")
+      // .get("http://localhost:8000/api/team/members")
       .then((response) => {
         setMembers(response.data);
         setLoading(false);
@@ -62,7 +63,11 @@ const Team = () => {
           )}
         </div>
 
-        {error ? (
+        {loading ? (
+          <div className="text-center text-gray-500">
+            <p>Loading...</p>
+          </div>
+        ) : error ? (
           <div className="text-center text-red-500">
             <p>{error}</p>
           </div>

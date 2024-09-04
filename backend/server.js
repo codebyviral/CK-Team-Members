@@ -5,6 +5,7 @@ const app = express();
 
 const corsOptions = {
     origin: 'https://ck-team-members.vercel.app',
+    // origin: 'http://localhost:5173',
     method: "GET,POST,DELETE,PATCH,HEAD",
     Credentials: true,
     allowedHeaders: 'Content-Type, Authorization',
